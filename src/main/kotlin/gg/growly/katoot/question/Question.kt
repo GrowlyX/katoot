@@ -17,3 +17,9 @@ data class Question(
     // choices
     val choices: List<QuestionChoice>
 )
+{
+    fun getFirstCorrectChoice(): QuestionChoice
+    {
+        return choices.first { it.correct }
+    }
+}
