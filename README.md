@@ -1,5 +1,5 @@
 # katoot
-An easy-to-use synchronous (blocking) Kahoot REST API Kotlin wrapper.
+An easy-to-use (blocking) Kotlin wrapper for Kahoot's REST api.
 
 ## Usage
 ```kt
