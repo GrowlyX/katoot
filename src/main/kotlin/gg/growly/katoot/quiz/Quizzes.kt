@@ -13,10 +13,12 @@ object Quizzes
     {
         val request = Katoot
             .request(gameId.toString())
+
+        val serialized = request
+            .asJson().body.toString()
+
         return Katoot.gson.fromJson(
-            request.asJson().body
-                .toPrettyString(),
-            Quiz::class.java
+            serialized, Quiz::class.java
         )
     }
 }
